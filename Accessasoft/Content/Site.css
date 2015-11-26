@@ -1,0 +1,174 @@
+﻿body {
+    padding-bottom: 20px;
+    font-family: Montserrat;
+    font-weight:300;
+}
+
+.body-content {
+    margin:0 auto;
+}
+
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+.quotebox {
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto 15vw;
+    font-size: 2.8em;
+    text-align:center;
+    padding: 12.5vh 0;
+    line-height:7vh;
+    font-weight:300;
+}
+
+.jumbotron {
+background-image: url("../Images/coffee.jpg");
+background-size: cover;
+color:white;
+ padding-top:15vh;
+ padding-bottom:14vh;
+ margin-bottom:10px;
+}
+
+.line {
+    color: #000000;
+    background-color: #000000;
+    height: 3px;
+    width:32%;
+}
+
+.circleicons img, .circleicons p{
+    height:60%;
+    width:60%;
+    display: block;
+    margin:0 auto;
+  display: flex;
+  flex-direction:row;
+  justify-content: center;
+    
+}
+
+.jumbotron h1 {
+    font-family:Montserrat, sans-serif;
+    font-weight:600;
+    font-size: 3.5em;
+}
+.jumbotron p {
+    font-family:Montserrat, sans-serif;
+    font-weight:500;
+}
+
+.circle {
+	width: 18vw;
+	height: 18vw;
+    margin:0 auto;
+	background: #00358b;
+	-moz-border-radius: 100px;
+	-webkit-border-radius: 300vw;
+	border-radius: 300vw;
+    overflow:hidden;
+      display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle:hover{
+    width: 19vw;
+    height: 19vw;
+    background-color:blue;
+    -webkit-transition: width .25s, height .25s, background-color .25s, -webkit-transform 2s; /* Safari */
+    transition: width .25s, height .25s, background-color .25s , transform 2s;
+    margin-bottom:-2vh; 
+}
+    .circle:hover a{
+        text-decoration:none;
+    }
+
+.circle-row{
+    padding-left:15vw;
+    padding-right: 15vw;
+}
+
+.jumbotron a{
+    font-family:Montserrat, sans-serif;
+    font-weight:400;
+    padding: 1.9vh 2.5vw;
+    font-size:.75em;
+    text-align:center;
+    margin-top:3vh;
+}
+
+.btn-primary{
+    background-color:#0050d1;
+    border:none;
+}
+
+@media only screen and (max-width: 1000px) and (min-width: 500px)
+{
+    .jumbotron
+    {
+        padding-top:10vh;
+        padding-bottom:6vh;
+    }
+    .jumbotron h1 {
+        font-size: 2em;
+    }
+    .jumbotron a {
+        margin-bottom:1vh;
+        padding: 2vh 4vw;
+        font-size: .8em;
+    }
+    .jumbotron p {
+        font-size:.8em;
+    }
+}
+
+@media only screen and (max-width: 500px) 
+{
+    .jumbotron
+    {
+        padding-top:10vh;
+        padding-bottom:6vh;
+    }
+    .jumbotron h1 {
+        font-size: 1.4em;
+    }
+        .jumbotron p {
+        font-size: .7em;
+        font-weight: 300
+    }
+            
+    .jumbotron a {
+        padding: 2vh 4vw;
+        font-size: 1em;
+    }
+    .circle {
+	    width: 23vw;
+	    height: 23vw;
+        margin-left:-4vw;
+        margin-right:-4vw;
+    }
+        .circle:hover {
+	    width: 24vw;
+	    height: 24vw;
+        margin-top: -1vh;
+        margin-left:-4vw;
+        margin-right:-4vw;
+        transition: width .5s, height .5s, margin-top .5s, linear;
+    }
+
+    .circleicons img, .circleicons p {
+    height:50%;
+    width:50%;
+    }
+}
