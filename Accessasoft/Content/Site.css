@@ -25,17 +25,27 @@ textarea {
     max-width: 280px;
 }
 
-/*Sets the Navbar background to semi-transparent*/
-.navbar{
-        border: none;
-        border-radius: 0;
-        background-color: rgba(0,0,0,0.5);
+/* Sets the Navbar background to semi-transparent */
+.navbar {
+    border: none;
+    border-radius: 0;
+    background-color: rgba(0,0,0,0.7);
 }
 
-/*Stops the brand name from turning blue on hover*/
+/* Ensures that the icon bar shows once collapsed */
+.icon-bar {
+    background-color: white;
+}
+
+/* Stops the brand name from turning blue on hover */
 .navbar-brand:hover,
 .navbar-brand:focus {
-  color:white;
+    color:white;
+}
+
+/*  */
+.nav-selected{
+  text-decoration:underline;
 }
 
 /* Pushes site content below the navbar, disabled because the navbar looks ugly without content below - will tweak */
@@ -43,6 +53,7 @@ textarea {
     padding-top:50px;
 }*/
 
+/* Forces Navbar text to white */
 .nav-text {
     color:white;
 }

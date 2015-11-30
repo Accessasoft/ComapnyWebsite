@@ -1,4 +1,6 @@
-﻿<!DOCTYPE html>
+﻿@using Accessasoft.Extentions
+
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
@@ -23,9 +25,9 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "Home", new { @class = "nav-text" })</li>
-                    <li>@Html.ActionLink("About", "About", "Home", new { @class = "nav-text" })</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home", new { @class = "nav-text" })</li>
+                    <li class="@Html.IsActive("Home", "Index")">@Html.ActionLink("Home", "Index", "Home", new { @class = "nav-text" })</li>
+                    <li class="@Html.IsActive("Home", "About")">@Html.ActionLink("About", "About", "Home", new { @class = "nav-text" })</li>
+                    <li class="@Html.IsActive("Home", "Contact")">@Html.ActionLink("Contact", "Contact", "Home", new { @class = "nav-text" })</li>
                 </ul>
             </div>
         </div>
