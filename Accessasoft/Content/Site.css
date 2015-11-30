@@ -25,6 +25,28 @@ textarea {
     max-width: 280px;
 }
 
+/*Sets the Navbar background to semi-transparent*/
+.navbar{
+        border: none;
+        border-radius: 0;
+        background-color: rgba(0,0,0,0.5);
+}
+
+/*Stops the brand name from turning blue on hover*/
+.navbar-brand:hover,
+.navbar-brand:focus {
+  color:white;
+}
+
+/* Pushes site content below the navbar, disabled because the navbar looks ugly without content below - will tweak */
+/*.body-content {
+    padding-top:50px;
+}*/
+
+.nav-text {
+    color:white;
+}
+
 .quotebox {
     color:white;
     display: flex;

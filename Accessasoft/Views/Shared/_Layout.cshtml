@@ -3,20 +3,15 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <title>@ViewBag.Title - Accessasoft</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 
 
 </head>
 <body>
-    <div class="jumbotron">
-        <p style="line-height:.5em;" class="text-center">THE ONLINE PORTFOLIO OF</p>
-        <h1 class="text-center">TIMOTHY BLOKZYL</h1>
-        <p class="text-center">HEAD OF SOFTWARE DEVELOPMENT</p>
-        <p class="text-center"><a style="text-shadow:none;" href="http://asp.net" class="btn btn-primary btn-lg">GET IN TOUCH</a></p>
-    </div>
-    @*<div class="navbar navbar-inverse navbar-fixed-top">
+    
+    <div class="navbar navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -24,19 +19,18 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                @Html.ActionLink("Accessasoft", "Index", "Home", new { area = "" }, new { @class = "navbar-brand nav-text" })
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("About", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                    <li>@Html.ActionLink("Home", "Index", "Home", new { @class = "nav-text" })</li>
+                    <li>@Html.ActionLink("About", "About", "Home", new { @class = "nav-text" })</li>
+                    <li>@Html.ActionLink("Contact", "Contact", "Home", new { @class = "nav-text" })</li>
                 </ul>
-                @Html.Partial("_LoginPartial")
             </div>
         </div>
-    </div>*@
-    <div class=" body-content">
+    </div>
+    <div class="body-content">
         @RenderBody()
         @*<hr />
         <footer>
