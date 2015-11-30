@@ -4,8 +4,51 @@
     font-weight:300;
 }
 
+/* Set padding to keep content from hitting the edges */
 .body-content {
+    /*padding-left: 15px;
+    padding-right: 15px;*/
     margin:0 auto;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+/* Sets the Navbar background to semi-transparent */
+.navbar {
+    border: none;
+    border-radius: 0;
+    background-color: rgba(0,0,0,0.7);
+}
+
+/* Ensures that the icon bar shows once collapsed */
+.icon-bar {
+    background-color: white;
+}
+
+/* Stops the brand name from turning blue on hover */
+.navbar-brand:hover,
+.navbar-brand:focus {
+    color:white;
+}
+
+/*  */
+.nav-selected{
+  text-decoration:underline;
+}
+
+/* Pushes site content below the navbar, disabled because the navbar looks ugly without content below - will tweak */
+/*.body-content {
+    padding-top:50px;
+}*/
+
+/* Forces Navbar text to white */
+.nav-text {
+    color:white;
 }
 
 .dl-horizontal dt {
