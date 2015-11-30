@@ -4,28 +4,23 @@
     font-weight:300;
 }
 
-/* Set padding to keep content from hitting the edges */
 .body-content {
-    /*padding-left: 15px;
-    padding-right: 15px;*/
     margin:0 auto;
 }
 
-/* Override the default bootstrap behavior where horizontal description lists 
-   will truncate terms that are too long to fit in the left column 
-*/
 .dl-horizontal dt {
     white-space: normal;
 }
 
-/* Set width on the form input elements since they're 100% wide by default */
 input,
 select,
-textarea {
+textarea 
+{
     max-width: 280px;
 }
 
-.quotebox {
+.quotebox
+{
     color:white;
     display: flex;
     justify-content: center;
@@ -38,44 +33,56 @@ textarea {
     font-weight:300;
 }
 
-.jumbotron {
-background-image: url("../Images/coffee.jpg");
-background-size: cover;
-color:white;
- padding-top:15vh;
- padding-bottom:14vh;
- margin-bottom:10px;
+.jumbotron 
+{
+    background-image: url("../Images/coffee.jpg");
+    background-size: cover;
+    color:white;
+    padding-top:15vh;
+    padding-bottom:14vh;
+    margin-bottom:10px;
 }
 
-.line {
+.jumbotron h1 
+{
+    font-family:Montserrat, sans-serif;
+    font-weight:600;
+    font-size: 3.5em;
+}
+.jumbotron p 
+{
+    font-family:Montserrat, sans-serif;
+    font-weight:500;
+}
+
+.jumbotron a
+{
+    font-family:Montserrat, sans-serif;
+    font-weight:400;
+    padding: 1.9vh 2.5vw;
+    font-size:.75em;
+    text-align:center;
+    margin-top:3vh;
+}
+
+.line 
+{
     color: #000000;
     background-color: #000000;
     height: 3px;
     width:32%;
 }
 
-.circleicons img, .circleicons p{
-    height:60%;
-    width:60%;
-    display: block;
-    margin:0 auto;
-  display: flex;
-  flex-direction:row;
-  justify-content: center;
-    
+.line1 
+{   
+    color: #000000;
+    background-color: #000000;
+    height: 3px;
+    width:10%;
 }
 
-.jumbotron h1 {
-    font-family:Montserrat, sans-serif;
-    font-weight:600;
-    font-size: 3.5em;
-}
-.jumbotron p {
-    font-family:Montserrat, sans-serif;
-    font-weight:500;
-}
-
-.circle {
+.circle 
+{
 	width: 18vw;
 	height: 18vw;
     margin:0 auto;
@@ -84,12 +91,28 @@ color:white;
 	-webkit-border-radius: 300vw;
 	border-radius: 300vw;
     overflow:hidden;
-      display: flex;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.circle:hover{
+.circle1
+{
+	width: 15vw;
+	height: 15vw;
+    margin:0 auto;
+	background: #00358b;
+	-moz-border-radius: 100px;
+	-webkit-border-radius: 300vw;
+	border-radius: 300vw;
+    overflow:hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle:hover 
+{
     width: 19vw;
     height: 19vw;
     background-color:blue;
@@ -97,29 +120,46 @@ color:white;
     transition: width .25s, height .25s, background-color .25s , transform 2s;
     margin-bottom:-2vh; 
 }
-    .circle:hover a{
-        text-decoration:none;
-    }
 
-.circle-row{
+.circle1:hover 
+{
+    width: 16vw;
+    height: 16vw;
+    background-color:blue;
+    -webkit-transition: width .25s, height .25s, background-color .25s, -webkit-transform 2s; /* Safari */
+    transition: width .25s, height .25s, background-color .25s , transform 2s;
+    margin-bottom:-2vh; 
+}
+
+.circle:hover a 
+{
+    text-decoration:none;
+}
+
+.circleicons img, .circleicons p 
+{
+    height:60%;
+    width:60%;
+    display: block;
+    margin:0 auto;
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+}
+
+.circle-row
+{
     padding-left:15vw;
     padding-right: 15vw;
 }
 
-.jumbotron a{
-    font-family:Montserrat, sans-serif;
-    font-weight:400;
-    padding: 1.9vh 2.5vw;
-    font-size:.75em;
-    text-align:center;
-    margin-top:3vh;
-    
-}
-.someclass {
+.circletext 
+{
     font-size: 2.5em;
 }
 
-.btn-primary{
+.btn-primary 
+{
     background-color:#0050d1;
     border:none;
 }
@@ -132,15 +172,18 @@ color:white;
         padding-top:10vh;
         padding-bottom:6vh;
     }
-    .jumbotron h1 {
+    .jumbotron h1 
+    {
         font-size: 2em;
     }
-    .jumbotron a {
+    .jumbotron a 
+    {
         margin-bottom:1vh;
         padding: 2vh 4vw;
         font-size: .8em;
     }
-    .jumbotron p {
+    .jumbotron p 
+    {
         font-size:.8em;
     }
 }
@@ -152,25 +195,30 @@ color:white;
         padding-top:10vh;
         padding-bottom:6vh;
     }
-    .jumbotron h1 {
+    .jumbotron h1 
+    {
         font-size: 1.4em;
     }
-        .jumbotron p {
+    .jumbotron p 
+    {
         font-size: .7em;
         font-weight: 300
     }
             
-    .jumbotron a {
+    .jumbotron a 
+    {
         padding: 2vh 4vw;
         font-size: 1em;
     }
-    .circle {
+    .circle 
+    {
 	    width: 23vw;
 	    height: 23vw;
         margin-left:-4vw;
         margin-right:-4vw;
     }
-        .circle:hover {
+    .circle:hover 
+    {
 	    width: 24vw;
 	    height: 24vw;
         margin-top: -1vh;
@@ -179,11 +227,13 @@ color:white;
         transition: width .5s, height .5s, margin-top .5s, linear;
     }
 
-    .circleicons img, .circleicons p {
-    height:50%;
-    width:50%;
+    .circleicons img, .circleicons p 
+    {
+        height:50%;
+        width:50%;
     }
-    .someclass{
+    .circletext  
+    {
         font-size:3vw;
     }
 }
