@@ -232,6 +232,14 @@ textarea
     font-size: 2em;
 }
 
+.work-detail-header{
+    font-size:2.5em; color:white; font-weight:700;float:right; display:block;
+}
+
+.work-detail-skills{
+    font-size:1em; color:white; font-weight:300; text-align:right;  
+}
+
 .btn-primary 
 {
     background-color:#0050d1;
