@@ -19,13 +19,13 @@
 <div class="row">
     <div class="circle-row">
         <div class="col-md-4 col-sm-4 col-xs-4">
-            <div id="btnDesign" class="circletext  circle">
+            <div id="btnDesign" class="circletext circle">
                 <div class="circleicons">
                     <img src="~/Images/webdicon.png" />
                     <p class="text-center" style="color:white;">Design</p>
                 </div>
             </div>
-            <span class="glyphicon glyphicon-triangle-top"></span>
+            <span class="glyphicon glyphicon-triangle-top" id="arrowDesign"></span>
         </div>
         <div class="col-md-4 col-sm-4 col-xs-4">
             <div id="btnDevelop" class="circletext circle">
@@ -34,7 +34,7 @@
                     <p class="text-center" style="color:white;">Develop</p>
                 </div>
             </div>
-            <span class="glyphicon glyphicon-triangle-top"></span>
+            <span class="glyphicon glyphicon-triangle-top" id="arrowDevelop"></span>
         </div>
         <div class="col-md-4 col-sm-4 col-xs-4">
             <div id="btnRespond" class="circletext  circle">
@@ -43,7 +43,7 @@
                     <p class=" text-center" style="color:white;">Respond</p>
                 </div>
             </div>
-            <span class="glyphicon glyphicon-triangle-top"></span>
+            <span class="glyphicon glyphicon-triangle-top" id="arrowRespond"></span>
         </div>
     </div>
 </div>
@@ -78,28 +78,43 @@
             var $qbDesign = $('#qbDesign');
             var $qbDevelop = $('#qbDevelop');
             var $qbRespond = $('#qbRespond');
+            var $arrowDesign = $('#arrowDesign');
+            var $arrowDevelop = $('#arrowDevelop');
+            var $arrowRespond = $('#arrowRespond');
+
+            $arrowDevelop.hide();
+            $arrowRespond.hide();
 
             $btnDesign.on('click', function () {
-                var $qb = $qbDesign.slideToggle("slow").css('opacity', '1');
+                var $qb = $qbDesign.css('opacity', '1').slideToggle("slow");
+                $arrowDesign.slideToggle("slow").css('opacity', '1');
                 $("body").animate({ scrollTop: $qb.offset().top },
                     { duration: 600, queue: false });
+                $arrowDevelop.slideUp("slow").css('opacity', '0.0');
                 $qbDevelop.slideUp("slow").css('opacity', '0.0');
+                $arrowRespond.slideUp("slow").css('opacity', '0.0');
                 $qbRespond.slideUp("slow").css('opacity', '0.0');
             });
 
             $btnDevelop.on('click', function () {
-                var $qb = $qbDevelop.slideToggle("slow").css('opacity', '1');
+                var $qb = $qbDevelop.css('opacity', '1').slideToggle("slow");
+                $arrowDevelop.slideToggle("slow").css('opacity', '1');
                 $("body").animate({ scrollTop: $qb.offset().top },
                     { duration: 600, queue: false });
-                $qbRespond.slideUp("slow").css('opacity','0.0');
+                $arrowRespond.slideUp("slow").css('opacity', '0.0');
+                $qbRespond.slideUp("slow").css('opacity', '0.0');
+                $arrowDesign.slideUp("slow").css('opacity', '0.0');
                 $qbDesign.slideUp("slow").css('opacity', '0.0');
             });
 
             $btnRespond.on('click', function () {
-                var $qb = $qbRespond.slideToggle("slow").css('opacity', '1');
+                var $qb = $qbRespond.css('opacity', '1').slideToggle("slow");
+                $arrowRespond.slideToggle("slow").css('opacity', '1');
                 $("body").animate({ scrollTop: $qb.offset().top },
                     { duration: 600, queue: false });
+                $arrowDesign.slideUp("slow").css('opacity', '0.0');
                 $qbDesign.slideUp("slow").css('opacity', '0.0');
+                $arrowDevelop.slideUp("slow").css('opacity', '0.0');
                 $qbDevelop.slideUp("slow").css('opacity', '0.0');
             });
         });
