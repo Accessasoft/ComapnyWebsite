@@ -197,6 +197,7 @@
     <Content Include="Images\coffee.jpg" />
     <Content Include="Images\gears.png" />
     <Content Include="Images\iphone.png" />
+    <Content Include="Images\TimBlog.png" />
     <Content Include="Images\webdicon.png" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
