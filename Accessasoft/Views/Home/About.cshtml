@@ -2,6 +2,7 @@
     ViewBag.Title = "About";
 }
 
+
 <div class="jumbotron jumbotron-about">
     <h1 class="text-center">About Us</h1>
     <p class="text-center">Who we are and what we do</p>
@@ -24,6 +25,7 @@
                     <p class="text-center" style="color:white;">Design</p>
                 </div>
             </div>
+            <span class="glyphicon glyphicon-triangle-top"></span>
         </div>
         <div class="col-md-4 col-sm-4 col-xs-4">
             <div id="btnDevelop" class="circletext circle">
@@ -32,6 +34,7 @@
                     <p class="text-center" style="color:white;">Develop</p>
                 </div>
             </div>
+            <span class="glyphicon glyphicon-triangle-top"></span>
         </div>
         <div class="col-md-4 col-sm-4 col-xs-4">
             <div id="btnRespond" class="circletext  circle">
@@ -40,6 +43,7 @@
                     <p class=" text-center" style="color:white;">Respond</p>
                 </div>
             </div>
+            <span class="glyphicon glyphicon-triangle-top"></span>
         </div>
     </div>
 </div>
@@ -56,12 +60,13 @@
     </div>
 </div>
 
-<div id="qbDesign" class="row quotebox" hidden>
-    <div class="quotebox-text">
-        “Accessasoft uses a holistic approach to design which fully ties the design and functionality into the development process.”
+<div id="qbDesign">
+    <div class="row quotebox">
+        <div class="quotebox-text">
+            “Accessasoft uses a holistic approach to design which fully ties the design and functionality into the development process.”
+        </div>
     </div>
 </div>
-
 
 @* These scripts switch the visibility of the quoteboxes when their respective circles are clicked *@
 @section scripts{

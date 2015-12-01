@@ -68,10 +68,18 @@ textarea
     max-width: 280px;
 }
 
+.glyphicon-triangle-top {
+    font-size: 50px;
+    color:#00358b;
+    display:block;
+    text-align:center;
+    margin-top: -12px;
+    margin-bottom: -13.5px;
+}
+
 .quotebox {
     background-color:#00358b; 
-    width:100vw; 
-    margin-top:5vh;
+    width:100vw;
 }
 
 .quotebox-text
