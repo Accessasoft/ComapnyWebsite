@@ -23,13 +23,13 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                @Html.ActionLink("Accessasoft", "Index", "Home", new { area = "" }, new { @class = "navbar-brand nav-text" })
+                @Html.ActionLink("Accessasoft", "Index", "Home", null, new { @class = "navbar-brand nav-text" })
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li class="@Html.IsActive("Home", "Index")">@Html.ActionLink("Home", "Index", "Home", new { @class = "nav-text" })</li>
-                    <li class="@Html.IsActive("Home", "About")">@Html.ActionLink("About", "About", "Home", new { @class = "nav-text" })</li>
-                    <li class="@Html.IsActive("Home", "Contact")">@Html.ActionLink("Contact", "Contact", "Home", new { @class = "nav-text" })</li>
+                    <li class="@Html.IsActive("Home", "Index")">@Html.ActionLink("Home", "Index", "Home", null , new { @class = "nav-text" })</li>
+                    <li class="@Html.IsActive("Home", "About")">@Html.ActionLink("About", "About", "Home", null, new { @class = "nav-text" })</li>
+                    <li class="@Html.IsActive("Home", "Contact")">@Html.ActionLink("Contact", "Contact", "Home", null, new { @class = "nav-text" })</li>
                 </ul>
             </div>
         </div>
