@@ -8,7 +8,7 @@
 </div>
 <div class="row">
     <div class="col-md-12 col-sm-12">
-        <h1 style="font-family:Montserrat; font-weight:400; font-size:2.2vw;" class="text-center">Our Mission</h1>
+        <h1 style="font-family:Montserrat; font-weight:400; font-size:32px;" class="text-center">Our Mission</h1>
         <hr class="line" />
         <p style="font-size:22px; color:grey; font-weight:400; padding-left:15vw; padding-right:15vw; margin-bottom:2vh;" class="text-center" ;>
             "We are dedicated to creating “Software For All” by producing custom software solutions at a reasonable cost."
@@ -58,8 +58,7 @@
 
 <div id="qbDesign" class="row" style="background-color:#00358b; width:100vw; margin-top:5vh;" hidden>
     <div class="quotebox">
-        “Accessasoft creates clean designs fully implementing your company or organization’s preexisting branding. Accessasoft uses a holistic
-        approach to design which fully ties the design and functionality into the development process.”
+        “Accessasoft uses a holistic approach to design which fully ties the design and functionality into the development process.”
     </div>
 </div>
 
@@ -68,41 +67,35 @@
 @section scripts{
     <script>
         $(document).ready(function () {
+            var $btnDesign = $('#btnDesign');
+            var $btnDevelop = $('#btnDevelop');
+            var $btnRespond = $('#btnRespond');
+            var $qbDesign = $('#qbDesign');
+            var $qbDevelop = $('#qbDevelop');
+            var $qbRespond = $('#qbRespond');
 
-            $('#btnDesign').on('click', function () {
-                var $qb = $("#qbDesign").slideToggle("slow");
-                $("body").animate({
-                    scrollTop: $qb.offset().top
-                }, {
-                    duration: 600,
-                    queue: false
-                });
-                $("#qbDevelop").slideUp("slow");
-                $("#qbRespond").slideUp("slow");
+            $btnDesign.on('click', function () {
+                var $qb = $qbDesign.slideToggle("slow");
+                $("body").animate({ scrollTop: $qb.offset().top },
+                    { duration: 600, queue: false });
+                $qbDevelop.slideUp("slow");
+                $qbRespond.slideUp("slow");
             });
 
-            $('#btnDevelop').on('click', function () {
-                var $qb = $("#qbDevelop").slideToggle("slow");
-                $("body").animate({
-                    scrollTop: $qb.offset().top
-                }, {
-                    duration: 600,
-                    queue: false
-                });
-                $("#qbRespond").slideUp("slow");
-                $("#qbDesign").slideUp("slow");
+            $btnDevelop.on('click', function () {
+                var $qb = $qbDevelop.slideToggle("slow");
+                $("body").animate({ scrollTop: $qb.offset().top },
+                    { duration: 600, queue: false });
+                $qbRespond.slideUp("slow");
+                $qbDesign.slideUp("slow");
             });
 
-            $('#btnRespond').on('click', function () {
-                var $qb = $("#qbRespond").slideToggle("slow");
-                $("body").animate({
-                    scrollTop: $qb.offset().top
-                }, {
-                    duration: 600,
-                    queue: false
-                });
-                $("#qbDesign").slideUp("slow");
-                $("#qbDevelop").slideUp("slow");
+            $btnRespond.on('click', function () {
+                var $qb = $qbRespond.slideToggle("slow");
+                $("body").animate({ scrollTop: $qb.offset().top },
+                    { duration: 600, queue: false });
+                $qbDesign.slideUp("slow");
+                $qbDevelop.slideUp("slow");
             });
         });
     </script>
