@@ -1,7 +1,113 @@
 ﻿@{
     ViewBag.Title = "About";
 }
-<h2>@ViewBag.Title.</h2>
-<h3>@ViewBag.Message</h3>
 
-<p>Use this area to provide additional information.</p>
+<div class="jumbotron jumbotron-about">
+    <h1 class="text-center">About Us</h1>
+    <p class="text-center">Who we are and what we do</p>
+</div>
+<div class="row">
+    <div class="col-md-12 col-sm-12">
+        <h1 style="font-family:Montserrat; font-weight:400; font-size:2.2vw;" class="text-center">Our Mission</h1>
+        <hr class="line" />
+        <p style="font-size:22px; color:grey; font-weight:400; padding-left:15vw; padding-right:15vw; margin-bottom:2vh;" class="text-center" ;>
+            "We are dedicated to creating “Software For All” by producing custom software solutions at a reasonable cost."
+        </p>
+    </div>
+</div>
+<div class="row">
+    <div class="circle-row">
+        <div class="col-md-4 col-sm-4 col-xs-4">
+            <div id="btnDesign" class="circletext  circle">
+                <div class="circleicons">
+                    <img src="~/Images/webdicon.png" />
+                    <p class="text-center" style="color:white;">Design</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-4 col-xs-4">
+            <div id="btnDevelop" class="circletext  circle">
+                <div class="circleicons">
+                    <img src="~/Images/gears.png" />
+                    <p class="text-center" style="color:white;">Develop</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-4 col-xs-4">
+            <div id="btnRespond" class="circletext  circle">
+                <div class="circleicons">
+                    <img src="~/Images/iphone.png" />
+                    <p class=" text-center" style="color:white;">Respond</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="qbRespond" class="row" style="background-color:#00358b; width:100vw; margin-top:5vh;" hidden>
+    <div class="quotebox">
+        “Accessasoft develops products that are mobile friendly!”
+    </div>
+</div>
+
+<div id="qbDevelop" class="row" style="background-color:#00358b; width:100vw; margin-top:5vh;" hidden>
+    <div class="quotebox">
+        “Accessasoft develops products.”
+    </div>
+</div>
+
+<div id="qbDesign" class="row" style="background-color:#00358b; width:100vw; margin-top:5vh;" hidden>
+    <div class="quotebox">
+        “Accessasoft creates clean designs fully implementing your company or organization’s preexisting branding. Accessasoft uses a holistic
+        approach to design which fully ties the design and functionality into the development process.”
+    </div>
+</div>
+
+
+@* These scripts switch the visibility of the quoteboxes when their respective circles are clicked *@
+@section scripts{
+    <script>
+        $(document).ready(function () {
+
+            $('#btnDesign').on('click', function () {
+                var $qb = $("#qbDesign").slideToggle("slow");
+                $("body").animate({
+                    scrollTop: $qb.offset().top
+                }, {
+                    duration: 600,
+                    queue: false
+                });
+                $("#qbDevelop").slideUp("slow");
+                $("#qbRespond").slideUp("slow");
+            });
+
+            $('#btnDevelop').on('click', function () {
+                var $qb = $("#qbDevelop").slideToggle("slow");
+                $("body").animate({
+                    scrollTop: $qb.offset().top
+                }, {
+                    duration: 600,
+                    queue: false
+                });
+                $("#qbRespond").slideUp("slow");
+                $("#qbDesign").slideUp("slow");
+            });
+
+            $('#btnRespond').on('click', function () {
+                var $qb = $("#qbRespond").slideToggle("slow");
+                $("body").animate({
+                    scrollTop: $qb.offset().top
+                }, {
+                    duration: 600,
+                    queue: false
+                });
+                $("#qbDesign").slideUp("slow");
+                $("#qbDevelop").slideUp("slow");
+            });
+        });
+    </script>
+}
+
+
+
+

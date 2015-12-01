@@ -86,6 +86,10 @@ textarea
     margin-bottom:10px;
 }
 
+.jumbotron-about {
+    background-image: url("../Images/CodeImage.jpg");
+}
+
 .jumbotron h1 
 {
     font-family:Montserrat, sans-serif;
