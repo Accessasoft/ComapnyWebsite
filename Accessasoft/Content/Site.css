@@ -161,11 +161,14 @@ textarea
 	border-radius: 300vw;
     overflow:hidden;
     display: flex;
+    z-index:1000000;
+    position:relative;
     justify-content: center;
     align-items: center;
     z-index:1000;
     position:relative;
 }
+
 
 .circle1
 {
@@ -190,6 +193,8 @@ textarea
     -webkit-transition: width .25s, height .25s, background-color .25s, -webkit-transform 2s; /* Safari */
     transition: width .25s, height .25s, background-color .25s , transform 2s;
     margin-bottom:-2vh; 
+    z-index:1000000;
+    position:relative;
 }
 
 .circle1:hover 
