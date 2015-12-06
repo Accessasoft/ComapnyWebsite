@@ -5,7 +5,6 @@
 }
 
 heading {
-    font-family:Montserrat; 
     font-weight:400; 
     font-size:32px;
 }
@@ -112,19 +111,17 @@ textarea
 
 .jumbotron h1 
 {
-    font-family:Montserrat, sans-serif;
     font-weight:600;
-    font-size: 3.5em;
+    font-size: 5em;
 }
 .jumbotron p 
 {
-    font-family:Montserrat, sans-serif;
     font-weight:500;
+    font-size:x-large;
 }
 
 .jumbotron a
 {
-    font-family:Montserrat, sans-serif;
     font-weight:400;
     padding: 1.9vh 2.5vw;
     font-size:.75em;
@@ -240,7 +237,8 @@ textarea
 
 .work-detail-image{
     width:100%;
-    padding:2vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
 }
 
 .work-detail-text{
@@ -268,7 +266,7 @@ textarea
     }
     .jumbotron h1 
     {
-        font-size: 2em;
+        font-size: 3em;
     }
     .jumbotron a 
     {
@@ -278,7 +276,8 @@ textarea
     }
     .jumbotron p 
     {
-        font-size:.8em;
+        font-size:1.3em;
+        line-height:1em;
     }
 }
 
@@ -296,7 +295,6 @@ textarea
     .jumbotron p 
     {
         font-size: .7em;
-        font-weight: 300
     }
             
     .jumbotron a 
