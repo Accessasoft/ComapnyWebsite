@@ -66,24 +66,47 @@
     </div>
 </div>
 
-<div class="row" style="background-color:#00358b; margin-top:200px; padding: 5vh 17vw;">
-    <div class="col-md-6">
-        <img class="work-detail-image" src="~/Images/timblog.png" />
-    </div>
-    <div class="col-md-6">
-        <div class="row">
-            <h1 class="work-detail-header">Tim's Blog</h1>
-        </div>
-        <div class="row">
-            <p class="work-detail-skills">HTML5, CSS, jQuery</p>
-        </div>
-        <div class="row">
-            <p class="work-detail-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-        </div>
+<div class="row" id="ourMission">
+    <div class="col-md-12 col-sm-12">
+        <h1 class="text-center heading">Our People</h1>
+        <hr class="line" />
+        <p style="font-size:22px; color:grey; font-weight:400; padding-left:15vw; padding-right:15vw; margin-bottom:2vh;" class="text-center">
+            "Accessasoft is a group of innovative software developers who have come together to as a team to enhance each other’s strength and produce the high quality custom software at a reasonable price."
+        </p>
     </div>
 </div>
-<div class="row" style="background-color:white; height: 80vh; width:100vw; margin-top:5vh; "></div>
-<div class="row" style="background-color:#00358b; height: 40vh; width:100vw; margin-top:5vh;"></div>
+
+<div class="row" style="padding-left:15vw; padding-right:15vw;">
+    <div class="col-md-4 about">
+        <div class="portrait portrait-andreas">
+        </div>
+        <p class="text-center about-title">Andreas King<br />Design Lead</p>
+        <hr />
+        <p class="about-text">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        </p>
+    </div>
+    <div class="col-md-4 about">
+        <div class="portrait portrait-default">
+        </div>
+        <p class="text-center about-title">Timothy Blokzyl<br />Development Lead</p>
+        <hr />
+        <p class="about-text">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        </p>
+    </div>
+    <div class="col-md-4 about">
+        <div class="portrait portrait-default">
+        </div>
+        <p class="text-center about-title">Paul Boyko<br />Database Lead</p>
+        <hr />
+        <p class="about-text">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        </p>
+    </div>
+</div>
+
+
 
 @* These scripts switch the visibility of the quoteboxes when their respective circles are clicked *@
 @section scripts{
@@ -101,6 +124,7 @@
             var $quotebox = $('.quotebox');
             var $circleArrow = $('.circleArrow');
             var $ourMission = $('#ourMission');
+            var $space = $('#space');
 
             $arrowDevelop.hide();
             $arrowRespond.hide();

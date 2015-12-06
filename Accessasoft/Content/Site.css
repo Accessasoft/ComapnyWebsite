@@ -77,6 +77,51 @@ textarea
     margin-bottom: -13.5px;
 }
 
+.about {
+    padding-top:1vh;
+}
+
+.about hr{
+    margin-top:1vh;
+    margin-bottom:1vh;
+}
+
+.about-title {
+    font-size:22px;
+    font-weight:400;
+    margin-bottom:0;
+}
+.about-text{
+    padding-left:1em;
+    padding-right:1em;
+    text-align:center;
+    font-size:16px;
+}
+
+.portrait {
+	width: 15vw;
+	height: 15vw;
+	border-radius: 150px;
+	-webkit-border-radius: 150px;
+	-moz-border-radius: 150px;
+    justify-content: center;
+	box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	-moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.portrait-andreas {
+	background: url("../Images/AndreasPortrait.jpg") no-repeat;
+    background-size:cover;
+}
+
+.portrait-default {
+	background: url("../Images/defaultProfile.png") no-repeat;
+    background-size:cover;
+}
+
 .quotebox {
     background-color:#00358b; 
     width:100vw;
