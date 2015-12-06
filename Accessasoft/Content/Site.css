@@ -338,6 +338,10 @@ textarea
     {
         font-size:2vw;
     }
+    .portrait{
+        height:30vw;
+        width:30vw;
+    }
 }
 
 @media only screen and (max-width: 500px) 
@@ -387,5 +391,9 @@ textarea
     .circletext  
     {
         font-size:3vw;
+    }
+    .portrait{
+        height:50vw;
+        width:50vw;
     }
 }
