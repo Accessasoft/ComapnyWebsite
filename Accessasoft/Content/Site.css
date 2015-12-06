@@ -77,6 +77,15 @@ textarea
     margin-bottom: -13.5px;
 }
 
+.section-text {
+    font-size:22px; 
+    color:grey; 
+    font-weight:400; 
+    padding-left:15vw; 
+    padding-right:15vw; 
+    margin-bottom:2vh;
+}
+
 .about {
     padding-top:1vh;
 }
@@ -319,6 +328,15 @@ textarea
     .jumbotron p 
     {
         font-size:.8em;
+    }
+    .circleicons img, .circleicons p 
+    {
+        height:50%;
+        width:50%;
+    }
+    .circletext  
+    {
+        font-size:2vw;
     }
 }
 
