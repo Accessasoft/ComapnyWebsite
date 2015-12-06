@@ -68,6 +68,11 @@ textarea
     max-width: 280px;
 }
 
+.padded {
+    padding-left:15vw; 
+    padding-right:15vw;
+}
+
 .glyphicon-triangle-top {
     font-size: 50px;
     color:#00358b;
@@ -80,9 +85,7 @@ textarea
 .section-text {
     font-size:22px; 
     color:grey; 
-    font-weight:400; 
-    padding-left:15vw; 
-    padding-right:15vw; 
+    font-weight:400;
     margin-bottom:2vh;
 }
 
@@ -142,7 +145,6 @@ textarea
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: auto 15vw;
     font-size: 22px;
     text-align:center;
     padding: 7vh 0;
@@ -317,7 +319,7 @@ textarea
     }
     .jumbotron h1 
     {
-        font-size: 2em;
+        font-size: 2.5em;
     }
     .jumbotron a 
     {
@@ -353,11 +355,11 @@ textarea
     }
     .jumbotron h1 
     {
-        font-size: 1.4em;
+        font-size: 2em;
     }
     .jumbotron p 
     {
-        font-size: .7em;
+        font-size:.8em;
         font-weight: 300
     }
             
@@ -395,5 +397,9 @@ textarea
     .portrait{
         height:50vw;
         width:50vw;
+    }
+    .padded{
+        padding-left:5vw; 
+        padding-right:5vw;
     }
 }
