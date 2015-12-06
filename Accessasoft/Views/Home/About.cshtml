@@ -7,7 +7,7 @@
     <h1 class="text-center">About Us</h1>
     <p class="text-center">Who we are and what we do</p>
 </div>
-<div class="row">
+<div class="row" id="ourMission">
     <div class="col-md-12 col-sm-12">
         <h1 class="text-center heading">Our Mission</h1>
         <hr class="line" />
@@ -25,7 +25,7 @@
                     <p class="text-center" style="color:white;">Design</p>
                 </div>
             </div>
-            <span class="glyphicon glyphicon-triangle-top" id="arrowDesign"></span>
+            <span class="glyphicon glyphicon-triangle-top circleArrow" id="arrowDesign"></span>
         </div>
         <div class="col-md-4 col-sm-4 col-xs-4">
             <div id="btnDevelop" class="circletext circle">
@@ -34,7 +34,7 @@
                     <p class="text-center" style="color:white;">Develop</p>
                 </div>
             </div>
-            <span class="glyphicon glyphicon-triangle-top" id="arrowDevelop"></span>
+            <span class="glyphicon glyphicon-triangle-top circleArrow" id="arrowDevelop"></span>
         </div>
         <div class="col-md-4 col-sm-4 col-xs-4">
             <div id="btnRespond" class="circletext  circle">
@@ -43,7 +43,7 @@
                     <p class=" text-center" style="color:white;">Respond</p>
                 </div>
             </div>
-            <span class="glyphicon glyphicon-triangle-top" id="arrowRespond"></span>
+            <span class="glyphicon glyphicon-triangle-top circleArrow" id="arrowRespond"></span>
         </div>
     </div>
 </div>
@@ -60,13 +60,30 @@
     </div>
 </div>
 
-<div id="qbDesign">
-    <div class="row quotebox">
-        <div class="quotebox-text">
-            “Accessasoft uses a holistic approach to design which fully ties the design and functionality into the development process.”
+<div id="qbDesign" class="row quotebox">
+    <div class="quotebox-text">
+        “Accessasoft uses a holistic approach to design which fully ties the design and functionality into the development process.”
+    </div>
+</div>
+
+<div class="row" style="background-color:#00358b; margin-top:200px; padding: 5vh 17vw;">
+    <div class="col-md-6">
+        <img class="work-detail-image" src="~/Images/timblog.png" />
+    </div>
+    <div class="col-md-6">
+        <div class="row">
+            <h1 class="work-detail-header">Tim's Blog</h1>
+        </div>
+        <div class="row">
+            <p class="work-detail-skills">HTML5, CSS, jQuery</p>
+        </div>
+        <div class="row">
+            <p class="work-detail-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
         </div>
     </div>
 </div>
+<div class="row" style="background-color:white; height: 80vh; width:100vw; margin-top:5vh; "></div>
+<div class="row" style="background-color:#00358b; height: 40vh; width:100vw; margin-top:5vh;"></div>
 
 @* These scripts switch the visibility of the quoteboxes when their respective circles are clicked *@
 @section scripts{
@@ -81,41 +98,35 @@
             var $arrowDesign = $('#arrowDesign');
             var $arrowDevelop = $('#arrowDevelop');
             var $arrowRespond = $('#arrowRespond');
+            var $quotebox = $('.quotebox');
+            var $circleArrow = $('.circleArrow');
+            var $ourMission = $('#ourMission');
 
             $arrowDevelop.hide();
             $arrowRespond.hide();
 
             $btnDesign.on('click', function () {
-                var $qb = $qbDesign.css('opacity', '1').slideToggle("slow");
-                $arrowDesign.slideToggle("slow").css('opacity', '1');
-                $("body").animate({ scrollTop: $qb.offset().top },
-                    { duration: 600, queue: false });
-                $arrowDevelop.slideUp("slow").css('opacity', '0.0');
-                $qbDevelop.slideUp("slow").css('opacity', '0.0');
-                $arrowRespond.slideUp("slow").css('opacity', '0.0');
-                $qbRespond.slideUp("slow").css('opacity', '0.0');
+                $quotebox.hide();
+                $qbDesign.slideDown("slow");
+                $("body").animate({ scrollTop: $ourMission.offset().top }, { duration: 600, queue: false });
+                $circleArrow.hide();
+                $arrowDesign.slideDown("slow").css('opacity', '1');
             });
 
             $btnDevelop.on('click', function () {
-                var $qb = $qbDevelop.css('opacity', '1').slideToggle("slow");
-                $arrowDevelop.slideToggle("slow").css('opacity', '1');
-                $("body").animate({ scrollTop: $qb.offset().top },
-                    { duration: 600, queue: false });
-                $arrowRespond.slideUp("slow").css('opacity', '0.0');
-                $qbRespond.slideUp("slow").css('opacity', '0.0');
-                $arrowDesign.slideUp("slow").css('opacity', '0.0');
-                $qbDesign.slideUp("slow").css('opacity', '0.0');
+                $quotebox.hide();
+                $qbDevelop.slideDown("slow");
+                $("body").animate({ scrollTop: $ourMission.offset().top }, { duration: 600, queue: false });
+                $circleArrow.hide();
+                $arrowDevelop.slideDown("slow");
             });
 
             $btnRespond.on('click', function () {
-                var $qb = $qbRespond.css('opacity', '1').slideToggle("slow");
-                $arrowRespond.slideToggle("slow").css('opacity', '1');
-                $("body").animate({ scrollTop: $qb.offset().top },
-                    { duration: 600, queue: false });
-                $arrowDesign.slideUp("slow").css('opacity', '0.0');
-                $qbDesign.slideUp("slow").css('opacity', '0.0');
-                $arrowDevelop.slideUp("slow").css('opacity', '0.0');
-                $qbDevelop.slideUp("slow").css('opacity', '0.0');
+                $quotebox.hide();
+                $qbRespond.slideDown("slow");
+                $("body").animate({ scrollTop: $ourMission.offset().top }, { duration: 600, queue: false });
+                $circleArrow.hide();
+                $arrowRespond.slideDown("slow");
             });
         });
     </script>
