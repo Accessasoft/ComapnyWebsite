@@ -344,6 +344,10 @@ textarea
         height:30vw;
         width:30vw;
     }
+    .padded{
+        padding-left:8vw; 
+        padding-right:8vw;
+    }
 }
 
 @media only screen and (max-width: 500px) 
