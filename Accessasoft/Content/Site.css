@@ -4,6 +4,7 @@
     font-weight:300;
 }
 
+
 heading {
     font-family:Montserrat; 
     font-weight:400; 
@@ -24,11 +25,16 @@ textarea {
     max-width: 280px;
 }
 
+.row{
+    margin:0;
+}
+
 /* Sets the Navbar background to semi-transparent */
 .navbar {
     border: none;
     border-radius: 0;
     background-color: rgba(0,0,0,0.7);
+    overflow:hidden;
 }
 
 /* Ensures that the icon bar shows once collapsed */
