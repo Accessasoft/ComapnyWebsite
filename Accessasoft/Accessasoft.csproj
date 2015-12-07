@@ -194,10 +194,15 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Images\AndreasPortrait.jpg" />
+    <Content Include="Images\CodeImage.jpg" />
     <Content Include="Images\coffee.jpg" />
+    <Content Include="Images\defaultProfile.png" />
     <Content Include="Images\gears.png" />
     <Content Include="Images\iphone.png" />
     <Content Include="Images\TimBlog.png" />
+    <Content Include="Images\tim_thumbnail.jpg" />
+    <Content Include="Images\tim_thumbnail2.jpg" />
     <Content Include="Images\webdicon.png" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />

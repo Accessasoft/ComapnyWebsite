@@ -5,6 +5,7 @@
 }
 
 heading {
+    font-family:Montserrat; 
     font-weight:400; 
     font-size:32px;
 }
@@ -67,6 +68,11 @@ textarea
     max-width: 280px;
 }
 
+.padded {
+    padding-left:15vw; 
+    padding-right:15vw;
+}
+
 .glyphicon-triangle-top {
     font-size: 50px;
     color:#00358b;
@@ -79,9 +85,7 @@ textarea
 .section-text {
     font-size:22px; 
     color:grey; 
-    font-weight:400; 
-    padding-left:15vw; 
-    padding-right:15vw; 
+    font-weight:400;
     margin-bottom:2vh;
 }
 
@@ -95,15 +99,24 @@ textarea
 }
 
 .about-title {
-    font-size:22px;
+        margin-top:15px;
+    font-size:30px;
+    font-weight:500;
+    margin-bottom:0;
+}
+.about-subtitle {
+    font-size:20px;
     font-weight:400;
     margin-bottom:0;
 }
+
 .about-text{
+
     padding-left:1em;
     padding-right:1em;
     text-align:center;
     font-size:16px;
+    padding-bottom: 15px;
 }
 
 .portrait {
@@ -125,6 +138,11 @@ textarea
     background-size:cover;
 }
 
+.portrait-tim {
+	background: url("../Images/tim_thumbnail.jpg") no-repeat;
+    background-size:cover;
+}
+
 .portrait-default {
 	background: url("../Images/defaultProfile.png") no-repeat;
     background-size:cover;
@@ -141,7 +159,6 @@ textarea
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: auto 15vw;
     font-size: 22px;
     text-align:center;
     padding: 7vh 0;
@@ -165,17 +182,19 @@ textarea
 
 .jumbotron h1 
 {
+    font-family:Montserrat, sans-serif;
     font-weight:600;
-    font-size: 5em;
+    font-size: 3.5em;
 }
 .jumbotron p 
 {
+    font-family:Montserrat, sans-serif;
     font-weight:500;
-    font-size:x-large;
 }
 
 .jumbotron a
 {
+    font-family:Montserrat, sans-serif;
     font-weight:400;
     padding: 1.9vh 2.5vw;
     font-size:.75em;
@@ -286,8 +305,7 @@ textarea
 
 .work-detail-image{
     width:100%;
-    padding-left: 2vw;
-    padding-right: 2vw;
+    padding:2vw;
 }
 
 .work-detail-text{
@@ -315,7 +333,7 @@ textarea
     }
     .jumbotron h1 
     {
-        font-size: 3em;
+        font-size: 2.5em;
     }
     .jumbotron a 
     {
@@ -325,8 +343,7 @@ textarea
     }
     .jumbotron p 
     {
-        font-size:1.3em;
-        line-height:1em;
+        font-size:.8em;
     }
     .circleicons img, .circleicons p 
     {
@@ -336,6 +353,14 @@ textarea
     .circletext  
     {
         font-size:2vw;
+    }
+    .portrait{
+        height:30vw;
+        width:30vw;
+    }
+    .padded{
+        padding-left:8vw; 
+        padding-right:8vw;
     }
 }
 
@@ -348,11 +373,12 @@ textarea
     }
     .jumbotron h1 
     {
-        font-size: 1.4em;
+        font-size: 2em;
     }
     .jumbotron p 
     {
-        font-size: .7em;
+        font-size:.8em;
+        font-weight: 300
     }
             
     .jumbotron a 
@@ -385,5 +411,13 @@ textarea
     .circletext  
     {
         font-size:3vw;
+    }
+    .portrait{
+        height:50vw;
+        width:50vw;
+    }
+    .padded{
+        padding-left:5vw; 
+        padding-right:5vw;
     }
 }
