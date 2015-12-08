@@ -1,8 +1,25 @@
-﻿body {
+﻿Skip to content
+This repository  
+Search
+Pull requests
+Issues
+Gist
+ @tblokzyl
+ Unwatch 3
+  Star 0
+ Fork 0 Accessasoft/ComapnyWebsite
+ Code  Issues 0  Pull requests 0  Wiki  Pulse  Graphs  Settings
+Tree: 491be7aa82 Find file Copy pathComapnyWebsite/Accessasoft/Content/Site.css
+491be7a  a day ago
+@tblokzyl tblokzyl Stupid Row Margins
+2 contributors @tblokzyl @AndreasKing
+RawBlameHistory     429 lines (377 sloc)  7.13 KB
+body {
     padding-bottom: 20px;
     font-family: Montserrat;
     font-weight:300;
 }
+
 
 heading {
     font-family:Montserrat; 
@@ -24,11 +41,16 @@ textarea {
     max-width: 280px;
 }
 
+.row{
+    margin:0;
+}
+
 /* Sets the Navbar background to semi-transparent */
 .navbar {
     border: none;
     border-radius: 0;
     background-color: rgba(0,0,0,0.7);
+    overflow:hidden;
 }
 
 /* Ensures that the icon bar shows once collapsed */
@@ -288,6 +310,12 @@ textarea
     justify-content: center;
 }
 
+.circle-row
+{
+    padding-left:15vw;
+    padding-right: 15vw;
+}
+
 .circletext 
 {
     font-size: 2em;
@@ -384,8 +412,8 @@ textarea
     {
 	    width: 23vw;
 	    height: 23vw;
-        /*margin-left:-4vw;
-        margin-right:-4vw;*/
+        margin-left:-4vw;
+        margin-right:-4vw;
     }
     .circle:hover 
     {
@@ -415,3 +443,5 @@ textarea
         padding-right:5vw;
     }
 }
+Status API Training Shop Blog About Pricing
+© 2015 GitHub, Inc. Terms Privacy Security Contact Help
