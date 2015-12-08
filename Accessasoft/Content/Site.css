@@ -288,12 +288,6 @@ textarea
     justify-content: center;
 }
 
-.circle-row
-{
-    padding-left:15vw;
-    padding-right: 15vw;
-}
-
 .circletext 
 {
     font-size: 2em;
@@ -390,8 +384,8 @@ textarea
     {
 	    width: 23vw;
 	    height: 23vw;
-        margin-left:-4vw;
-        margin-right:-4vw;
+        /*margin-left:-4vw;
+        margin-right:-4vw;*/
     }
     .circle:hover 
     {
