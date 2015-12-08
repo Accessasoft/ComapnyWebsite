@@ -32,6 +32,7 @@ heading {
     /*padding-left: 15px;
     padding-right: 15px;*/
     margin:0 auto;
+    overflow-x:hidden;
 }
 
 /* Set width on the form input elements since they're 100% wide by default */
@@ -42,7 +43,8 @@ textarea {
 }
 
 .row{
-    margin:0;
+    margin-left:0;
+    margin-right:0;
 }
 
 /* Sets the Navbar background to semi-transparent */
