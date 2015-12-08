@@ -168,7 +168,8 @@ textarea
     align-items: center;
     font-size: 22px;
     text-align:center;
-    padding: 7vh 0;
+    padding-top: 7vh;
+    padding-bottom: 7vh;
     line-height:7vh;
     font-weight:300;
 }
@@ -323,13 +324,11 @@ textarea
     font-size:1.4em; color:white; font-weight:300; text-align:right;
 }
 
-
 .btn-primary 
 {
     background-color:#0050d1;
     border:none;
 }
-
 
 @media only screen and (max-width: 1000px) and (min-width: 500px)
 {
@@ -386,8 +385,7 @@ textarea
     {
         font-size:.8em;
         font-weight: 300
-    }
-            
+    }       
     .jumbotron a 
     {
         padding: 2vh 4vw;
@@ -409,7 +407,6 @@ textarea
         margin-right:-4vw;
         transition: width .5s, height .5s, margin-top .5s, linear;
     }
-
     .circleicons img, .circleicons p 
     {
         height:50%;
@@ -428,5 +425,3 @@ textarea
         padding-right:5vw;
     }
 }
-Status API Training Shop Blog About Pricing
-© 2015 GitHub, Inc. Terms Privacy Security Contact Help
