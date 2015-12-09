@@ -15,16 +15,25 @@
     <meta property="og:title" content="Welcome To Accessasoft" />
     <meta property="og:type" content="article" />
     <meta property="og:url" content="http://www.testaccessasoft.azurewebsites.net/" />
-    <meta property="og:image" content="http://www.testaccessasoft.azurewebsites.net/images/Welcome.jpg" />
+    <meta property="og:image" content="http://testaccessasoft.azurewebsites.net/Images/Welcome.jpg" />
     <meta property="og:description" content="An Amazing Mobile App and Website Development Studio!" />
     <meta property="og:site_name" content="Accessasoft" />
     <title>@ViewBag.Title - Accessasoft</title>
-    @Styles.Render("~/Content/css")
-    @Scripts.Render("~/bundles/modernizr")
-    @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/bootstrap")
-    @Scripts.Render("~/Scripts/myscripts")
-    @RenderSection("scripts", required: false)
+
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="http://www.testaccessasoft.azurewebsites.net/">
+    <meta name="twitter:title" content="Welcome To Accessasoft">
+    <meta name="twitter:description" content="An Amazing Mobile App and Website Development Studio!">
+    <meta name="twitter:creator" content="@timblokzyl">
+    <-- Twitter Summary card images must be at least 120x120px -->
+        <meta name="twitter:image" content="http://www.testaccessasoft.azurewebsites.net/Images/Welcome.jpg">
+        @Styles.Render("~/Content/css")
+        @Scripts.Render("~/bundles/modernizr")
+        @Scripts.Render("~/bundles/jquery")
+        @Scripts.Render("~/bundles/bootstrap")
+        @Scripts.Render("~/Scripts/myscripts")
+        @RenderSection("scripts", required: false)
 
 </head>
 <body>
