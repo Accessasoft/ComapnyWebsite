@@ -18,15 +18,19 @@ heading {
     overflow-x:hidden;
 }
 
+.navbar-fixed-top{
+    padding:1.6vh 0;
+}
+
 .change-nav-top{
-    padding:.5vh 0;
+    padding:1.6vh 0;
     background-color:black;
     -webkit-transition: padding .3s, background-color .2s, -webkit-transform 5s; /* Safari */
     transition: padding .3s, background-color .2s , transform 5s;
 }
 
 .change-nav-top2{
-    padding:1vh 0;
+    padding:2vh 0;
     background-color:transparent;
     -webkit-transition: padding .3s, background-color .3s, -webkit-transform 5s; /* Safari */
     transition: padding .3s, background-color .3s , transform 5s;
@@ -364,6 +368,10 @@ textarea
 
 @media only screen and (max-width: 1000px) and (min-width: 500px)
 {
+    .navbar-fixed-top {
+    padding:.5vh 0;
+    }
+
     .jumbotron
     {
         padding-top:10vh;
@@ -371,7 +379,7 @@ textarea
     }
     .jumbotron h1 
     {
-        font-size: 2.5em;
+        font-size: 40px;
     }
     .jumbotron a 
     {
@@ -404,6 +412,10 @@ textarea
 
 @media only screen and (max-width: 500px) 
 {
+    .navbar-fixed-top {
+    padding:.5vh 0;
+    }
+
     .jumbotron-home
     {
         padding-top:10vh;
@@ -411,12 +423,14 @@ textarea
     }
     .jumbotron-home h1 
     {
-        font-size: 2em;
+        font-size: 45px;
+        padding: 20px;
     }
     .jumbotron-home p 
     {
-        font-size:.8em;
-        font-weight: 300
+        font-size: 15px;
+        padding: 20px;
+        margin-top:-35px;
     }
             
     .jumbotron-home a 
@@ -459,5 +473,3 @@ textarea
         padding-right:5vw;
     }
 }
-Status API Training Shop Blog About Pricing
-© 2015 GitHub, Inc. Terms Privacy Security Contact Help
