@@ -1,25 +1,8 @@
-﻿Skip to content
-This repository  
-Search
-Pull requests
-Issues
-Gist
- @tblokzyl
- Unwatch 3
-  Star 0
- Fork 0 Accessasoft/ComapnyWebsite
- Code  Issues 0  Pull requests 0  Wiki  Pulse  Graphs  Settings
-Tree: 491be7aa82 Find file Copy pathComapnyWebsite/Accessasoft/Content/Site.css
-491be7a  a day ago
-@tblokzyl tblokzyl Stupid Row Margins
-2 contributors @tblokzyl @AndreasKing
-RawBlameHistory     429 lines (377 sloc)  7.13 KB
-body {
+﻿body {
     padding-bottom: 20px;
     font-family: Montserrat;
     font-weight:300;
 }
-
 
 heading {
     font-family:Montserrat; 
@@ -33,6 +16,20 @@ heading {
     padding-right: 15px;*/
     margin:0 auto;
     overflow-x:hidden;
+}
+
+.change-nav-top{
+    padding:.5vh 0;
+    background-color:black;
+    -webkit-transition: padding .3s, background-color .2s, -webkit-transform 5s; /* Safari */
+    transition: padding .3s, background-color .2s , transform 5s;
+}
+
+.change-nav-top2{
+    padding:1vh 0;
+    background-color:transparent;
+    -webkit-transition: padding .3s, background-color .3s, -webkit-transform 5s; /* Safari */
+    transition: padding .3s, background-color .3s , transform 5s;
 }
 
 /* Set width on the form input elements since they're 100% wide by default */
@@ -51,7 +48,6 @@ textarea {
 .navbar {
     border: none;
     border-radius: 0;
-    background-color: rgba(0,0,0,0.7);
     overflow:hidden;
 }
 
@@ -83,6 +79,11 @@ textarea {
 
 .dl-horizontal dt {
     white-space: normal;
+}
+
+.header-home , .header-caption{
+    text-align:center;
+    padding:0 5vw;
 }
 
 input,
@@ -190,10 +191,19 @@ textarea
     font-weight:300;
 }
 
+.jumbotron-home{
+    height:100vh;
+    width:100vw;
+    background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url("../Images/laptop.jpg");
+    background-size: cover;
+    color:white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
 .jumbotron 
 {
-    background-image: url("../Images/coffee.jpg");
-    background-size: cover;
     color:white;
     padding-top:15vh;
     padding-bottom:14vh;
@@ -204,24 +214,28 @@ textarea
     background-image: url("../Images/CodeImage.jpg");
 }
 
-.jumbotron h1 
+.jumbotron-home h1 
 {
     font-family:Montserrat, sans-serif;
     font-weight:600;
-    font-size: 3.5em;
+    font-size: 5em;
+    margin-top:.2em;
+    letter-spacing: 2px;
 }
-.jumbotron p 
+.jumbotron-home p 
 {
     font-family:Montserrat, sans-serif;
-    font-weight:500;
+    font-weight:300;
+    font-size:1.5em;
+    letter-spacing:5px;
 }
 
-.jumbotron a
+.jumbotron-home a
 {
     font-family:Montserrat, sans-serif;
     font-weight:400;
     padding: 1.9vh 2.5vw;
-    font-size:.75em;
+    font-size:1em;
     text-align:center;
     margin-top:3vh;
 }
@@ -390,22 +404,22 @@ textarea
 
 @media only screen and (max-width: 500px) 
 {
-    .jumbotron
+    .jumbotron-home
     {
         padding-top:10vh;
         padding-bottom:6vh;
     }
-    .jumbotron h1 
+    .jumbotron-home h1 
     {
         font-size: 2em;
     }
-    .jumbotron p 
+    .jumbotron-home p 
     {
         font-size:.8em;
         font-weight: 300
     }
             
-    .jumbotron a 
+    .jumbotron-home a 
     {
         padding: 2vh 4vw;
         font-size: 1em;

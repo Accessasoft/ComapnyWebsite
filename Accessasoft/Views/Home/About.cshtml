@@ -2,7 +2,7 @@
     ViewBag.Title = "About";
 }
 
-<div class="jumbotron jumbotron-about">
+<div id="beginning" class="jumbotron jumbotron-about">
     <h1 class="text-center">About Us</h1>
     <p class="text-center">Who we are and what we do</p>
 </div>
@@ -104,54 +104,6 @@
             </p>
         </div>
     </div>
-
-@* These scripts switch the visibility of the quoteboxes when their respective circles are clicked *@
-@section scripts{
-    <script>
-        $(document).ready(function () {
-            var $btnDesign = $('#btnDesign');
-            var $btnDevelop = $('#btnDevelop');
-            var $btnRespond = $('#btnRespond');
-            var $qbDesign = $('#qbDesign');
-            var $qbDevelop = $('#qbDevelop');
-            var $qbRespond = $('#qbRespond');
-            var $arrowDesign = $('#arrowDesign');
-            var $arrowDevelop = $('#arrowDevelop');
-            var $arrowRespond = $('#arrowRespond');
-            var $quotebox = $('.quotebox');
-            var $circleArrow = $('.circleArrow');
-            var $ourMission = $('#ourMission');
-            var $space = $('#space');
-
-            $arrowDevelop.hide();
-            $arrowRespond.hide();
-
-            $btnDesign.on('click', function () {
-                $quotebox.hide();
-                $qbDesign.slideDown("slow");
-                $("body").animate({ scrollTop: $ourMission.offset().top }, { duration: 600, queue: false });
-                $circleArrow.hide();
-                $arrowDesign.slideDown("slow");
-            });
-
-            $btnDevelop.on('click', function () {
-                $quotebox.hide();
-                $qbDevelop.slideDown("slow");
-                $("body").animate({ scrollTop: $ourMission.offset().top }, { duration: 600, queue: false });
-                $circleArrow.hide();
-                $arrowDevelop.slideDown("slow");
-            });
-
-            $btnRespond.on('click', function () {
-                $quotebox.hide();
-                $qbRespond.slideDown("slow");
-                $("body").animate({ scrollTop: $ourMission.offset().top }, { duration: 600, queue: false });
-                $circleArrow.hide();
-                $arrowRespond.slideDown("slow");
-            });
-        });
-    </script>
-}
 
 
 

@@ -200,6 +200,7 @@
     <Content Include="Images\defaultProfile.png" />
     <Content Include="Images\gears.png" />
     <Content Include="Images\iphone.png" />
+    <Content Include="Images\laptop.jpg" />
     <Content Include="Images\TimBlog.png" />
     <Content Include="Images\tim_thumbnail.jpg" />
     <Content Include="Images\tim_thumbnail2.jpg" />
@@ -213,6 +214,7 @@
     <Content Include="Content\bootstrap-theme.css.map" />
     <None Include="Properties\PublishProfiles\TestAccessasoft.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\content.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />

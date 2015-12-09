@@ -1,13 +1,12 @@
 ﻿@{
     ViewBag.Title = "Home Page";
 }
-<div class="jumbotron">
-    <p style="line-height:.5em;" class="text-center">THE ONLINE PORTFOLIO OF</p>
-    <h1 class="text-center">TIMOTHY BLOKZYL</h1>
-    <p class="text-center">HEAD OF SOFTWARE DEVELOPMENT</p>
-    <p class="text-center"><a style="text-shadow:none;" href="http://asp.net" class="btn btn-primary btn-lg">GET IN TOUCH</a></p>
+<div id="scrolltotoptest1" class="jumbotron-home">
+    <h1 @*style="background-color:rgba(0,0,0,0.7)"*@ class="header-home">WELCOME TO ACCESSASOFT</h1>
+    <p @*style="background-color:rgba(0,0,0,0.7)"*@ class="header-caption">AN AMAZING MOBILE APP AND WEBSITE DEVELOPMENT STUDIO!</p>
+    @*<p class="text-center"><a style="text-shadow:none;" href="http://asp.net" class="btn btn-primary btn-lg">GET IN TOUCH</a></p>*@
 </div>
-<div class="row">
+<div  id="scrolltotoptest2" class="row">
     <div class="col-md-12 col-sm-12">
         <h1 style="font-family:Montserrat; font-weight:400; font-size:2.2vw;" class="text-center">MULTI CHANNEL CREATIVE AGENCY</h1>
         <hr class="line" />
@@ -17,56 +16,60 @@
     </div>
 </div>
 <div class="row">
-    <div  class="circle-row">
+    <div class="circle-row">
         <div class="col-md-4 col-sm-4 col-xs-4">
-            <div class="circletext circle">
-                <a href="#">
-                    <div class="circleicons">
-                        <img src="~/Images/webdicon.png" />
-                        <p class="text-center" style="color:white;">Design</p>
-                    </div>
-                </a>
+            <div id="btnDesign" class="circletext circle">
+                <div class="circleicons">
+                    <img src="~/Images/webdicon.png" />
+                    <p class="text-center" style="color:white;">Design</p>
+                </div>
             </div>
+            <span class="glyphicon glyphicon-triangle-top circleArrow" id="arrowDesign"></span>
         </div>
         <div class="col-md-4 col-sm-4 col-xs-4">
-            <div class="circletext circle">
-                <a href="#">
-                    <div class="circleicons">
-                        <img src="~/Images/gears.png" />
-                        <p class="text-center" style="color:white;">Develop</p>
-                    </div>
-                </a>
+            <div id="btnDevelop" class="circletext circle">
+                <div class="circleicons">
+                    <img src="~/Images/gears.png" />
+                    <p class="text-center" style="color:white;">Develop</p>
+                </div>
             </div>
+            <span class="glyphicon glyphicon-triangle-top circleArrow" id="arrowDevelop"></span>
         </div>
         <div class="col-md-4 col-sm-4 col-xs-4">
-            <div class="circletext circle">
-                <a href="#">
-                    <div class="circleicons">
-                        <img src="~/Images/iphone.png" />
-                        <p class=" text-center" style="color:white;">Respond</p>
-                    </div>
-                </a>
+            <div id="btnRespond" class="circletext  circle">
+                <div class="circleicons">
+                    <img src="~/Images/iphone.png" />
+                    <p class=" text-center" style="color:white;">Respond</p>
+                </div>
             </div>
-            @*<div class="text-center" style=" background-color:blue; height:8vw; width:8vw; z-index:-10; margin-bottom: -13vh; transform:rotate(45deg);     margin-left: auto; margin-right:auto; "></div>*@
+            <span class="glyphicon glyphicon-triangle-top circleArrow" id="arrowRespond"></span>
         </div>
     </div>
 </div>
-
-<div class="row" style="background-color:#00358b; width:100vw; margin-top:5vh;">
-    <div class="quotebox-text">
-        “Accessasoft creates clean designs fully implementing your company or organization’s preexisting branding. Accessasoft uses a holistic
-        approach to design which fully ties the design and functionality into the development process.”
+<div id="qbRespond" class="row col-md-12 quotebox padded" hidden>
+    <div class="quotebox-text padded">
+        “Accessasoft develops products that are mobile friendly!”
+    </div>
+</div>
+<div id="qbDevelop" class="row col-md-12 quotebox padded" hidden>
+    <div class="quotebox-text padded">
+        “Accessasoft develops products.”
+    </div>
+</div>
+<div id="qbDesign" class="row col-md-12 quotebox padded">
+    <div class="quotebox-text padded">
+        “Accessasoft uses a holistic approach to design which fully ties the design and functionality into the development process.”
     </div>
 </div>
 @* Temporary rows to show where the content will go*@
-    <div class="row" style="background-color:white; width:100vw; margin-top:1vh;">
-    <h1 style="font-family:Montserrat; font-weight:400; font-size:2.2vw;" class="text-center">MY WORK</h1>
+    <div class="row" style="background-color:white; width:100vw;">
+    <h1  style="font-family:Montserrat; font-weight:400; font-size:40px;" class="text-center">MY WORK</h1>
     <hr class="line1" />
         <p style="font-size:26px; color:grey; font-weight:400; padding-left:15vw; padding-right:15vw; margin-bottom:2vh;" class="text-center" ;>
             "If you love what you do, you'll never work a day in your life."
         </p>
     </div>
-<div class="row">
+<div  class="row">
     <div style="margin-top:3vh;" class="circle-row">
         <div class="col-md-3 col-sm-3 col-xs-3">
             <div style="background-color:#e5e5e5;" class="circletext circle1">
@@ -104,7 +107,7 @@
         </div>
     </div>
 </div>
-    <div class="row" style="background-color:#00358b; margin-top:5vh; padding: 5vh 17vw;">
+    <div class="row" id="scrolltotoptest3" style="background-color:#00358b; margin-top:5vh; padding: 5vh 17vw;">
         <div class="col-md-6">
             <img class="work-detail-image" src="~/Images/timblog.png" />
         </div>
@@ -128,3 +131,4 @@
             <div class="row" style="background-color:#00358b; height: 40vh; width:100vw; margin-top:5vh;"></div>
 
             @* Temporary end*@
+

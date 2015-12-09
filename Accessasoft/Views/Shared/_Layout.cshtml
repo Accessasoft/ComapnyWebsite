@@ -10,6 +10,7 @@
     @Scripts.Render("~/bundles/modernizr")
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/Scripts/myscripts")
     @RenderSection("scripts", required: false)
 
 </head>
@@ -27,9 +28,13 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li class="@Html.IsActive("Home", "Index")">@Html.ActionLink("Home", "Index", "Home", null , new { @class = "nav-text" })</li>
+                    @*<li class="@Html.IsActive("Home", "Index")">@Html.ActionLink("Home", "Index", "Home", null , new { @class = "nav-text" })</li>
                     <li class="@Html.IsActive("Home", "About")">@Html.ActionLink("About", "About", "Home", null, new { @class = "nav-text" })</li>
-                    <li class="@Html.IsActive("Home", "Contact")">@Html.ActionLink("Contact", "Contact", "Home", null, new { @class = "nav-text" })</li>
+                    <li class="@Html.IsActive("Home", "Contact")">@Html.ActionLink("Contact", "Contact", "Home", null, new { @class = "nav-text" })</li>*@
+                    <li id="button1" class="nav-text"><a class="nav-text">Home</a></li>
+                    <li id="button2" class="nav-text"><a class="nav-text">About</a></li>
+                    <li id="button3" class="nav-text"><a class="nav-text">Contact</a></li>
+
                 </ul>
             </div>
         </div>
