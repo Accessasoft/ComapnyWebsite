@@ -43,12 +43,12 @@
     });
     $("#button2").click(function () {
         $('html, body').animate({
-            scrollTop: $ourMission.offset().top
+            scrollTop: $ourMission.offset().top - 100
         }, 2000);
     });
     $("#button3").click(function () {
         $('html, body').animate({
-            scrollTop: $("#scrolltotoptest3").offset().top
+            scrollTop: $("#scrolltotoptest3").offset().top - 100
         }, 2000);
     });
 
@@ -58,7 +58,7 @@
     $btnDesign.on('click', function () {
         $quotebox.hide();
         $qbDesign.slideDown("slow");
-        $("body").animate({ scrollTop: $ourMission.offset().top }, { duration: 600, queue: false });
+        $("body").animate({ scrollTop: $ourMission.offset().top - 100 }, { duration: 600, queue: false });
         $circleArrow.hide();
         $arrowDesign.slideDown("slow");
     });
@@ -66,7 +66,7 @@
     $btnDevelop.on('click', function () {
         $quotebox.hide();
         $qbDevelop.slideDown("slow");
-        $("body").animate({ scrollTop: $ourMission.offset().top }, { duration: 600, queue: false });
+        $("body").animate({ scrollTop: $ourMission.offset().top - 100 }, { duration: 600, queue: false });
         $circleArrow.hide();
         $arrowDevelop.slideDown("slow");
     });
@@ -74,7 +74,7 @@
     $btnRespond.on('click', function () {
         $quotebox.hide();
         $qbRespond.slideDown("slow");
-        $("body").animate({ scrollTop: $ourMission.offset().top }, { duration: 600, queue: false });
+        $("body").animate({ scrollTop: $ourMission.offset().top - 100 }, { duration: 600, queue: false });
         $circleArrow.hide();
         $arrowRespond.slideDown("slow");
     });
