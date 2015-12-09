@@ -36,6 +36,7 @@
 
     /* End Scroll Portion */
 
+    /* Scroll To Links on Navbar */
     $("#button1").click(function () {
         $('html, body').animate({
             scrollTop: $("#scrolltotoptest1").offset().top
@@ -50,6 +51,12 @@
         $('html, body').animate({
             scrollTop: $("#scrolltotoptest3").offset().top
         }, 2000);
+    });
+    /* End Scroll To Links on Navbar */
+
+    $(window).load(function () {
+        // Animate loader off screen
+        $(".loading").fadeOut("slow");;
     });
 
     $arrowDevelop.hide();
