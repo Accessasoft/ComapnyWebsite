@@ -44,7 +44,7 @@
     });
     $("#button2").click(function () {
         $('html, body').animate({
-            scrollTop: $("#scrolltotoptest2").offset().top
+            scrollTop: $ourMission.offset().top
         }, 2000);
     });
     $("#button3").click(function () {
