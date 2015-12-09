@@ -2,6 +2,17 @@
     padding-bottom: 20px;
     font-family: Montserrat;
     font-weight:300;
+    overflow-x:hidden;
+}
+
+.loading {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 99999999;
+	background: url(../images/Preloader_7.gif) center no-repeat #fff;
 }
 
 heading {
@@ -15,11 +26,14 @@ heading {
     /*padding-left: 15px;
     padding-right: 15px;*/
     margin:0 auto;
-    overflow-x:hidden;
+    
 }
 
 .navbar-fixed-top{
     padding:1.6vh 0;
+    letter-spacing: 1px;
+    font-weight:400;
+    font-size:larger;
 }
 
 .change-nav-top{
@@ -412,6 +426,7 @@ textarea
 
 @media only screen and (max-width: 500px) 
 {
+
     .navbar-fixed-top {
     padding:.5vh 0;
     }
@@ -420,6 +435,7 @@ textarea
     {
         padding-top:10vh;
         padding-bottom:6vh;
+        background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url("../Images/laptop2.jpg");
     }
     .jumbotron-home h1 
     {

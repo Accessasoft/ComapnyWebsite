@@ -201,6 +201,8 @@
     <Content Include="Images\gears.png" />
     <Content Include="Images\iphone.png" />
     <Content Include="Images\laptop.jpg" />
+    <Content Include="Images\laptop2.jpg" />
+    <Content Include="Images\Preloader_7.gif" />
     <Content Include="Images\TimBlog.png" />
     <Content Include="Images\tim_thumbnail.jpg" />
     <Content Include="Images\tim_thumbnail2.jpg" />
