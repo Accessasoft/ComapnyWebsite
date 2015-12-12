@@ -1,4 +1,9 @@
-﻿body {
+﻿html, body {
+  width: auto !important;
+  overflow-x: hidden !important;
+}
+
+body {
     padding-bottom: 20px;
     font-family: Montserrat;
     font-weight:300;
@@ -439,7 +444,7 @@ textarea
     }
     .jumbotron-home h1 
     {
-        font-size: 45px;
+        font-size: 35px;
         padding: 20px;
     }
     .jumbotron-home p 
@@ -487,5 +492,8 @@ textarea
     .padded{
         padding-left:5vw; 
         padding-right:5vw;
+    }
+    .header-home{
+        font-size:
     }
 }
