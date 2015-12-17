@@ -25,47 +25,83 @@
     <meta name="twitter:site" content="http://www.testaccessasoft.azurewebsites.net/">
     <meta name="twitter:title" content="Welcome To Accessasoft">
     <meta name="twitter:description" content="An Amazing Mobile App and Website Development Studio!">
-    @*<meta name="twitter:creator" content="@timblokzyl">*@
-        <meta name="twitter:image" content="http://www.testaccessasoft.azurewebsites.net/Images/Welcome.jpg">
+    <meta name="twitter:creator" content="&#64;timblokzyl">
+        <meta name="twitter:image" content="http://testaccessasoft.azurewebsites.net/Images/Welcome.jpg">
         @Styles.Render("~/Content/css")
         @Scripts.Render("~/bundles/modernizr")
         @Scripts.Render("~/bundles/jquery")
         @Scripts.Render("~/bundles/bootstrap")
         @Scripts.Render("~/Scripts/myscripts")
         @RenderSection("scripts", required: false)
+        @Styles.Render("~/Content/fontawesome")
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/3.2.0/imagesloaded.pkgd.min.js"></script>
 
 </head>
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
     <div class="loading"></div>
-    <div class="navbar navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                @Html.ActionLink("Accessasoft", "Index", "Home", null, new { @class = "navbar-brand nav-text" })
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    @*<li class="@Html.IsActive("Home", "Index")">@Html.ActionLink("Home", "Index", "Home", null , new { @class = "nav-text" })</li>
-                    <li class="@Html.IsActive("Home", "About")">@Html.ActionLink("About", "About", "Home", null, new { @class = "nav-text" })</li>
-                    <li class="@Html.IsActive("Home", "Contact")">@Html.ActionLink("Contact", "Contact", "Home", null, new { @class = "nav-text" })</li>*@
-                    <li id="button1" class="nav-text"><a class="nav-text">Home</a></li>
-                    <li id="button2" class="nav-text"><a class="nav-text">About</a></li>
-                    <li id="button3" class="nav-text"><a class="nav-text">Contact</a></li>
+        <div class="navbar navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    @Html.ActionLink("Accessasoft", "Index", "Home", null, new { @class = "navbar-brand nav-text" })
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        @*<li class="@Html.IsActive("Home", "Index")">@Html.ActionLink("Home", "Index", "Home", null , new { @class = "nav-text" })</li>
+                            <li class="@Html.IsActive("Home", "About")">@Html.ActionLink("About", "About", "Home", null, new { @class = "nav-text" })</li>
+                            <li class="@Html.IsActive("Home", "Contact")">@Html.ActionLink("Contact", "Contact", "Home", null, new { @class = "nav-text" })</li>*@
+                        <li id="button1" class="nav-text"><a href="#home" class="nav-text" onclick="return false;">Home</a></li>
+                        <li id="button2" class="nav-text"><a href="#ourmission" class="nav-text" onclick="return false;">About</a></li>
+                        <li id="button3" class="nav-text"><a href="#ourteam" class="nav-text" onclick="return false;">Team</a></li>
+                        <li id="button4" class="nav-text"><a href="#ourwork" class="nav-text" onclick="return false;">Portfolio</a></li>
+                        <li id="button9" class="nav-text"><a href="#ourwork" class="nav-text" onclick="return false;">Contact</a></li>
 
-                </ul>
+                    </ul>
+                </div>
             </div>
         </div>
-    </div>
     <div class="body-content">
         @RenderBody()
-        <hr />
-        <footer class="footer">
-            <p>&copy; @DateTime.Now.Year - Accessasoft</p>
-        </footer>
+        
     </div>
+    <footer id="contact" class="padded footer-distributed">
+        <div class="footer-left">
+            <h3>Accessasoft</h3>
+            <p class="footer-links">
+                <a id="button5" href="#home" onclick="return false;">Home</a>
+                ·
+                <a id="button6" href="#ourmission" onclick="return false;">About</a>
+                ·
+                <a id="button7" href="#ourteam" onclick="return false;">Team</a>
+                ·
+                <a id="#button8" href="#ourwork" onclick="return false;">Portfolio</a>
+                ·
+                @*<a href="#">Faq</a>
+                ·*@
+                <a href="#button10">Contact</a>
+            </p>
+            <p class="footer-name">Accessasoft &copy; 2015</p>
+
+            <div class="footer-icons">
+                <a href=""><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+                <a href="#"><i class="fa fa-github"></i></a>
+            </div>
+        </div>
+        <div class="footer-right">
+            <p>Contact Us</p>
+            <form action="#" method="post">
+                <input type="text" name="email" placeholder="Email" />
+                <textarea name="message" placeholder="Message"></textarea>
+                <button>Send</button>
+            </form>
+        </div>
+    </footer>
 </body>
 </html>

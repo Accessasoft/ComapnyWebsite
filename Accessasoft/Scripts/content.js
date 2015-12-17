@@ -15,7 +15,7 @@
 
     /* Top Scroll Portion */
     var scroll_start = 0;
-    var startchange = $('#scrolltotoptest1');
+    var startchange = $('#home');
     var offset = startchange.offset();
 
     if (startchange.length) {
@@ -24,38 +24,71 @@
             if (scroll_start > offset.top) {
                 $(".navbar-fixed-top").addClass("change-nav-top")
                 $(".navbar-fixed-top").removeClass("change-nav-top2")
-                //$(".navbar-fixed-top").css('padding', '1vh 0');
             } else {
                 $(".navbar-fixed-top").removeClass("change-nav-top")
                 $(".navbar-fixed-top").addClass("change-nav-top2")
-                //$('.navbar-fixed-top').css('background-color', 'transparent');
-                //$(".navbar-fixed-top").css('padding', '.5vh 0');
             }
         });
     }
 
     /* End Scroll Portion */
 
+
     /* Scroll To Links on Navbar */
     $("#button1").click(function () {
         $('html, body').animate({
-            scrollTop: $("#scrolltotoptest1").offset().top
-        }, 2000);
+            scrollTop: $("#home").offset().top
+        }, 1500);
     });
     $("#button2").click(function () {
         $('html, body').animate({
-            scrollTop: $ourMission.offset().top
-        }, 2000);
+            scrollTop: $ourMission.offset().top - 70
+        }, 1500);
     });
     $("#button3").click(function () {
         $('html, body').animate({
-            scrollTop: $("#scrolltotoptest3").offset().top
-        }, 2000);
+            scrollTop: $("#ourteam").offset().top - 70
+        }, 1500);
+    });
+    $("#button4").click(function () {
+        $('html, body').animate({
+            scrollTop: $("#ourWork").offset().top - 70
+        }, 1500);
+    });
+    $("#button5").click(function () {
+        $('html, body').animate({
+            scrollTop: $("#home").offset().top
+        }, 1500);
+    });
+    $("#button6").click(function () {
+        $('html, body').animate({
+            scrollTop: $ourMission.offset().top - 70
+        }, 1500);
+    });
+    $("#button7").click(function () {
+        $('html, body').animate({
+            scrollTop: $("#ourteam").offset().top - 70
+        }, 1500);
+    });
+    $("#button8").click(function () {
+        $('html, body').animate({
+            scrollTop: $("#ourwork").offset().top - 70
+        }, 1500);
+    });
+    $("#button9").click(function () {
+        $('html, body').animate({
+            scrollTop: $("#contact").offset().top - 70
+        }, 1500);
+    });
+    $("#button10").click(function () {
+        $('html, body').animate({
+            scrollTop: $("#contact").offset().top - 70
+        }, 1500);
     });
     /* End Scroll To Links on Navbar */
 
-    $(window).load(function () {
-        // Animate loader off screen
+
+    $('#home').imagesLoaded({ background: true }, function () {
         $(".loading").fadeOut("slow");;
     });
 
