@@ -49,7 +49,17 @@
     });
     $("#button3").click(function () {
         $('html, body').animate({
-            scrollTop: $("#scrolltotoptest3").offset().top - 100
+            scrollTop: $(".footer").offset().top
+        }, 2000);
+    });
+    $("#btnOurPeople").click(function () {
+        $('html, body').animate({
+            scrollTop: $("#ourPeople").offset().top
+        }, 2000);
+    });
+    $("#btnOurWork").click(function () {
+        $('html, body').animate({
+            scrollTop: $("#ourWork").offset().top - 100
         }, 2000);
     });
     /* End Scroll To Links on Navbar */

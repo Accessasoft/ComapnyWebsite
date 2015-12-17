@@ -147,7 +147,7 @@ textarea
 }
 
 .about-title {
-        margin-top:15px;
+    margin-top:15px;
     font-size:30px;
     font-weight:500;
     margin-bottom:0;
@@ -196,6 +196,7 @@ textarea
     text-align:center;
     padding: 1vh 0;
 }
+
 .portfolio-width {
     width:100%;
 }
@@ -225,12 +226,22 @@ textarea
     padding: 1vh 0;
 }
 
-.portfolio-image {
+.portfolio-image-hospice {
+    background: url("../Images/HospiceThumb.jpg") no-repeat;
+    justify-content: center;
+    background-size:cover;
     width:initial;
 	height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.portfolio-image-help {
+    background: url("../Images/HelpThumb.png") no-repeat;
     justify-content: center;
-    background: url("../Images/HospiceThumb.jpg") no-repeat;
     background-size:cover;
+    width:initial;
+	height: 300px;
     margin-left: auto;
     margin-right: auto;
 }
