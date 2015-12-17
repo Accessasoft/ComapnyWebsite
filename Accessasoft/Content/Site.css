@@ -203,7 +203,7 @@ textarea
     align-items: center;
     font-size: 20px;
     text-align:center;
-    padding: 1vh 0;
+    padding: 15px 0;
 }
 .portfolio-width {
     width:100%;
@@ -306,7 +306,7 @@ textarea
     align-items: center;
     font-size: 30px;
     text-align:center;
-    padding: 7vh 0.3vw;
+    padding: 6vh 0.3vw 7vh 0.3vw;
     line-height:50px;
     font-weight:300;
 }
