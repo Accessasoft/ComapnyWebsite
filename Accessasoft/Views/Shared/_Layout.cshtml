@@ -5,7 +5,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <!--custom address bar colors android, ios, windows phone-->
     <meta name="theme-color" content="#00358b">
     <meta name="msapplication-navbutton-color" content="#00358b">
@@ -26,48 +26,48 @@
     <meta name="twitter:title" content="Welcome To Accessasoft">
     <meta name="twitter:description" content="An Amazing Mobile App and Website Development Studio!">
     <meta name="twitter:creator" content="&#64;timblokzyl">
-        <meta name="twitter:image" content="http://testaccessasoft.azurewebsites.net/Images/Welcome.jpg">
-        @Styles.Render("~/Content/css")
-        @Scripts.Render("~/bundles/modernizr")
-        @Scripts.Render("~/bundles/jquery")
-        @Scripts.Render("~/bundles/bootstrap")
-        @Scripts.Render("~/Scripts/myscripts")
-        @RenderSection("scripts", required: false)
-        @Styles.Render("~/Content/fontawesome")
+    <meta name="twitter:image" content="http://testaccessasoft.azurewebsites.net/Images/Welcome.jpg">
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/Scripts/myscripts")
+    @RenderSection("scripts", required: false)
+    @Styles.Render("~/Content/fontawesome")
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/3.2.0/imagesloaded.pkgd.min.js"></script>
 
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
     <div class="loading"></div>
-        <div class="navbar navbar-fixed-top">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    @Html.ActionLink("Accessasoft", "Index", "Home", null, new { @class = "navbar-brand nav-text" })
-                </div>
-                <div class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav">
-                        @*<li class="@Html.IsActive("Home", "Index")">@Html.ActionLink("Home", "Index", "Home", null , new { @class = "nav-text" })</li>
-                            <li class="@Html.IsActive("Home", "About")">@Html.ActionLink("About", "About", "Home", null, new { @class = "nav-text" })</li>
-                            <li class="@Html.IsActive("Home", "Contact")">@Html.ActionLink("Contact", "Contact", "Home", null, new { @class = "nav-text" })</li>*@
-                        <li id="button1" class="nav-text"><a href="#home" class="nav-text" onclick="return false;">Home</a></li>
-                        <li id="button2" class="nav-text"><a href="#ourmission" class="nav-text" onclick="return false;">About</a></li>
-                        <li id="button3" class="nav-text"><a href="#ourteam" class="nav-text" onclick="return false;">Team</a></li>
-                        <li id="button4" class="nav-text"><a href="#ourwork" class="nav-text" onclick="return false;">Portfolio</a></li>
-                        <li id="button9" class="nav-text"><a href="#ourwork" class="nav-text" onclick="return false;">Contact</a></li>
+    <div class="navbar navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @Html.ActionLink("Accessasoft", "Index", "Home", null, new { @class = "navbar-brand nav-text" })
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    @*<li class="@Html.IsActive("Home", "Index")">@Html.ActionLink("Home", "Index", "Home", null , new { @class = "nav-text" })</li>
+                        <li class="@Html.IsActive("Home", "About")">@Html.ActionLink("About", "About", "Home", null, new { @class = "nav-text" })</li>
+                        <li class="@Html.IsActive("Home", "Contact")">@Html.ActionLink("Contact", "Contact", "Home", null, new { @class = "nav-text" })</li>*@
+                    <li id="button1" class="nav-text"><a href="#home" class="nav-text" onclick="return false;">Home</a></li>
+                    <li id="button2" class="nav-text"><a href="#ourmission" class="nav-text" onclick="return false;">About</a></li>
+                    <li id="button3" class="nav-text"><a href="#ourteam" class="nav-text" onclick="return false;">Team</a></li>
+                    <li id="button4" class="nav-text"><a href="#ourwork" class="nav-text" onclick="return false;">Portfolio</a></li>
+                    <li id="button9" class="nav-text"><a href="#ourwork" class="nav-text" onclick="return false;">Contact</a></li>
 
-                    </ul>
-                </div>
+                </ul>
             </div>
         </div>
+    </div>
     <div class="body-content">
         @RenderBody()
-        
+
     </div>
     <footer id="contact" class="padded footer-distributed">
         <div class="footer-left">
@@ -82,7 +82,7 @@
                 <a id="#button8" href="#ourwork" onclick="return false;">Portfolio</a>
                 ·
                 @*<a href="#">Faq</a>
-                ·*@
+                    ·*@
                 <a href="#button10">Contact</a>
             </p>
             <p class="footer-name">Accessasoft &copy; 2015</p>
