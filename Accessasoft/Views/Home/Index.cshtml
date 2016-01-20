@@ -70,7 +70,6 @@
 <div class="row padded">
     <div id="ourteam" class="col-md-12 col-sm-12">
         <h1 style="margin-top:40px;" class="col-md-12 heading">Our People</h1>
-        @*<hr class="line" />*@
         <p style="font-weight:300; color:#123489; font-size:30px;" class="section-text col-md-12">
             Building custom software solutions as a team
         </p>
@@ -114,13 +113,7 @@
 </div>
 <div id="ourWork" style="background-color:#eeeeee; padding-top:40px; padding-bottom:40px;" class="row padded">
     <div class="col-md-12 col-sm-12">
-        @*<h1 class="text-center heading">Our Work</h1>
-            <hr class="line" />
-            <p class="text-center section-text padded">
-                "Accessasoft is a group of innovative software developers who have come together to as a team to enhance each other’s strength and produce the high quality custom software at a reasonable price."
-            </p>*@
         <h1 class="col-md-12 heading">Our Work</h1>
-        @*<hr class="line" />*@
         <p style="margin-bottom:20px; font-weight:300; color:#123489; font-size:30px;" class="section-text col-md-12">
             We develop mobile-ready software for all
         </p>
@@ -131,7 +124,7 @@
 </div>
 <div style="background-color:#eeeeee;" class="row padded">
     <div class="col-md-4 col-sm-6">
-        <div class="portfolio">
+        <div class="portfolio" data-toggle="modal" data-target="#hospiceModal">
             <div class="portfolio-title">
                 <div class="portfolio-title-text">
                     Hospice Niagara Portal
@@ -148,9 +141,29 @@
             <div class="portfolio-image port-image1">
             </div>
         </div>
+        <div id="hospiceModal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"></button>
+                        <div class="modal-title">Hospice Niagara Portal</div>
+                    </div>
+                    <div id="hospiceJumbotron" class="jumbotron">
+                    </div>
+                    <div class="modal-body">
+                        <p>The Hospice Niagara portal was initally developed in a team during our time at Niagara College. Amongst many other versions developed by other teams, ours was chosen by Hospice Niagara.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
     </div>
     <div class="col-md-4 col-sm-6">
-        <div class="portfolio">
+        <div class="portfolio" data-toggle="modal" data-target="#panicModal">
             <div class="portfolio-title">
                 <div class="portfolio-title-text">
                     Panic App
@@ -164,6 +177,26 @@
                 </div>
             </div>
             <div class="portfolio-image2">
+            </div>
+        </div>
+        <div id="panicModal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"></button>
+                        <div class="modal-title">Panic App</div>
+                    </div>
+                    <div id="panicJumbotron" class="jumbotron">
+                    </div>
+                    <div class="modal-body">
+                        <p>An Android appliction that allows an individual who is in a dangerous situation to inform freinds or family with the touch of a button that they need help.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>

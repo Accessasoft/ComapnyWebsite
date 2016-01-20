@@ -264,6 +264,41 @@ textarea
     margin-right: auto;
 }
 
+#hospiceJumbotron {
+    background: url("../Images/HospiceThumb.jpg") no-repeat;
+    justify-content: center;
+    background-size:cover;
+	height: 50vh;
+    margin:0;
+}
+
+#panicJumbotron {
+    background: url("../Images/help.png") no-repeat;
+    justify-content: center;
+    background-size:cover;
+	height: 50vh;
+    margin:0;
+}
+
+.modal-header {
+    background:rgba(0,53,139,1);
+    -webkit-border-top-left-radius: 4px;
+    -webkit-border-top-right-radius: 4px;
+    -moz-border-radius-topleft: 4px;
+    -moz-border-radius-topright: 4px;
+     border-top-left-radius: 4px;
+     border-top-right-radius: 4px;
+     border-bottom:none;
+}
+
+.modal-title {
+    color:#fff;
+    display: flex;
+    justify-content: flex-start;
+    font-size: 20px;
+    text-align:center;
+}
+
 .portrait {
 	width: 15vw;
 	height: 15vw;
@@ -271,9 +306,6 @@ textarea
 	-webkit-border-radius: 150px;
 	-moz-border-radius: 150px;
     justify-content: center;
-	/*box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-	-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-	-moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);*/
     margin-left: auto;
     margin-right: auto;
 }
