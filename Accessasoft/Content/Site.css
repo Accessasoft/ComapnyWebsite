@@ -268,43 +268,39 @@ textarea
 .carousel-inner > .item > img {
     min-width: 100%; 
     height: auto;
+    max-height:50vh;
+    object-fit: cover;
 }
 
 .close {
     font-size:30px;
 }
 
-#hospiceJumbotron {
-    background: url("../Images/HospiceThumb.jpg") no-repeat;
-    justify-content: center;
-    background-size:cover;
-	height: 50vh;
-    margin:0;
-}
-
-#panicJumbotron {
-    background: url("../Images/help.png") no-repeat;
-    justify-content: center;
-    background-size:cover;
-	height: 50vh;
-    margin:0;
-}
 
 .modal-header {
     background:rgba(0,53,139,1);
-    -webkit-border-top-left-radius: 4px;
+    /*-webkit-border-top-left-radius: 4px;
     -webkit-border-top-right-radius: 4px;
     -moz-border-radius-topleft: 4px;
     -moz-border-radius-topright: 4px;
      border-top-left-radius: 4px;
-     border-top-right-radius: 4px;
+     border-top-right-radius: 4px;*/
      border-bottom:none;
+}
+
+.modal-footer {
+    text-align: center;
+}
+
+.modal-content {
+    border-radius:0;
 }
 
 .modal-title {
     color:#fff;
     display: flex;
     justify-content: flex-start;
+    padding-left:10px;
     font-size: 20px;
     text-align:center;
 }
